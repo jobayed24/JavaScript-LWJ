@@ -1,9 +1,10 @@
-const newnumber=[23,23,34,12,35];
+const newnumber=[3,2];
 
-function checkpass(cvalue){
-    return cvalue>10;
+function checkvalue(cvalue,index,arr){
+    console.log( `[${arr}] [${index}]->${cvalue}`);
+    return cvalue>2;
 }
+const myValue=newnumber.every(checkvalue);
 
-const getbolvalue=newnumber.every(checkpass);
+console.log(myValue)
 
-console.log(getbolvalue)
