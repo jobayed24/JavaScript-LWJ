@@ -1,10 +1,9 @@
 const survey = [
-    { name: "Steve", answer: "Yes"},
-    { name: "Jessica", answer: "Yes"},
-    { name: "Peter", answer: "Yes"},
-    { name: "Elaine", answer: "Yes"}
+    { name: "Steve", answer: "No"},
+    { name: "Jessica", answer: "No"},
+    { name: "Peter", answer: "No"},
+    { name: "Elaine", answer: "No"}
   ];
-
   function isSameAnswer(el,index,arr){
     if(index===0){
         return true;
@@ -12,9 +11,7 @@ const survey = [
         return (el.answer===arr[index-1].answer)
     }
   }
-
   const getValue=survey.every(isSameAnswer);
-
   console.log(getValue)
 
 
