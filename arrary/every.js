@@ -1,10 +1,20 @@
-const newnumber=[3,2];
+const survey = [
+    { name: "Steve", answer: "Yes"},
+    { name: "Jessica", answer: "Yes"},
+    { name: "Peter", answer: "Yes"},
+    { name: "Elaine", answer: "Yes"}
+  ];
 
-function checkvalue(cvalue,index,arr){
-    console.log( `[${arr}] [${index}]->${cvalue}`);
-    return cvalue>2;
-}
-const myValue=newnumber.every(checkvalue);
+  function isSameAnswer(el,index,arr){
+    if(index===0){
+        return true;
+    }else{
+        return (el.answer===arr[index-1].answer)
+    }
+  }
 
-console.log(myValue)
+  const getValue=survey.every(isSameAnswer);
+
+  console.log(getValue)
+
 
