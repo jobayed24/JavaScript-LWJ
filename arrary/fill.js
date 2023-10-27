@@ -1,7 +1,7 @@
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
 
-const fillFruits=fruits.fill('kiwi',2,3);
+const fillFruits=fruits.fill('kiwi',2,3);   
 
 console.log(fruits);
 
