@@ -1,17 +1,15 @@
-const myArray=[];
+const reservedName=[];
+document.getElementById("submit").addEventListener('click',submitDatas);
 
-const fruits=["Banana", "Orange", "Apple", "Mango","Apple","Jackfruit","Pineapple","Apple"];
-
-
-
-const element="Apple";
-
-let findValue=fruits.indexOf(element);
-
-while(findValue!==-1){
-    myArray.push(findValue);
-
-    findValue=fruits.indexOf(element,(findValue+1))
+function submitDatas(){
+    let putName=document.getElementById('inputData').value;
+    let checkExist=reservedName.includes(putName);
+    if(!checkExist){
+        reservedName.push(putName)
+        console.log(`The ${putName} data succussfully reserved`);
+    }else{
+        console.log(`The ${putName} has already exist in Databases`);
+    }
+    
+    document.getElementById('demo').innerHTML=reservedName;
 }
-
-document.getElementById('demo').innerHTML=myArray;
