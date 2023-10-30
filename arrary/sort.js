@@ -1,9 +1,9 @@
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-const sFruits=fruits.sort();
+const points = [40, 100, 1, 5, 25, 10];
 
 
+points.sort((a,b)=>a-b);
 
-console.log(fruits);
+console.log(points[points.length-1]);
 
-console.log(sFruits)
+
+
