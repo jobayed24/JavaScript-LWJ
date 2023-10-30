@@ -1,8 +1,7 @@
 const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 
 
-const slfruits=fruits.slice(-3,-1);
+const sliceFruits=fruits.slice(1,4);
 
-console.log(slfruits);
 
-console.log(fruits);
+console.log(sliceFruits);
