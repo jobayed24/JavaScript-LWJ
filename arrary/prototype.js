@@ -5,11 +5,7 @@ Array.prototype.uCName=function(){
     }
    
 }
-
 const storeName=['jobayed','hossen','tanvir','rasel'];
 
 storeName.uCName();
-
-
-
 console.log(storeName)
