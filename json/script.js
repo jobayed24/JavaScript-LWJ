@@ -1,9 +1,10 @@
-let myObj = '{"name":"John","age":31,"city":"New York"}';
+let myObj = {"name":"John","age":31,"city":"New York"};
 
-let myOBJSting=JSON.parse(myObj);
+let makeJSonOb=JSON.stringify(myObj);
 
+localStorage.setItem('testJSON',makeJSonOb);
 
+let getJSon=localStorage.getItem('testJSON');
+let text=JSON.parse(getJSon);
 
-// console.log(myObj);
-
-console.log( myOBJSting);
+console.log(text.age)
