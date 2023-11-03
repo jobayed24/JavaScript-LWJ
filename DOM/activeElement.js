@@ -1,9 +1,8 @@
 
+const createAttributes=document.createAttribute("style");
 
-document.addEventListener('click',function(){
-   let myNewWindow=window.open();
-   myNewWindow.document.open();
-   myNewWindow.document.write("<h1>Jobayed</h1>");
-   myNewWindow.document.close();
- 
-})
+createAttributes.value="background-color: gray";
+
+const getH1=document.getElementsByTagName("h1")[0];
+
+getH1.setAttributeNode(createAttributes);
