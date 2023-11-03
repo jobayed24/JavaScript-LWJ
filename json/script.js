@@ -1,10 +1,12 @@
-let myObj = {"name":"John","age":31,"city":"New York"};
+///reviver function
 
-let makeJSonOb=JSON.stringify(myObj);
+let myObj = '{"name":"John","age":31,"city":"New York"}';
 
-localStorage.setItem('testJSON',makeJSonOb);
-
-let getJSon=localStorage.getItem('testJSON');
-let text=JSON.parse(getJSon);
-
-console.log(text.age)
+let getObFromSt=JSON.parse(myObj,function(key,value){
+    if(key=="city"){
+        return value.toUpperCase();
+    }else{
+        return value;
+    }
+})
+console.log(getObFromSt.city)
