@@ -1,8 +1,10 @@
 
-const createAttributes=document.createAttribute("style");
+let getLink=document.getElementsByTagName('a')[0];
 
-createAttributes.value="background-color: gray";
+let createHref=document.createAttribute('href');
 
-const getH1=document.getElementsByTagName("h1")[0];
+createHref.value='https://jobayed.net';
 
-getH1.setAttributeNode(createAttributes);
+getLink.setAttributeNode(createHref);
+
+console.log(getLink)
