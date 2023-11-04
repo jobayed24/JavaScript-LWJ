@@ -1,6 +1,11 @@
-const createElement=document.createElement('h1');
+const createElement=document.createElement('h1')
 
-createElement.setAttribute('id','jk');
-createElement.textContent='Jobayed exploring the JavaScript'
+const createAtt=document.createAttribute("style");
 
-document.body.append(createElement);
+createAtt.value="color:red";
+
+createElement.setAttributeNode(createAtt);
+
+createElement.textContent='jobayed is humble';
+
+document.body.append(createElement)
