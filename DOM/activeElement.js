@@ -1,11 +1,10 @@
-const createElement=document.createElement('h1')
 
-const createAtt=document.createAttribute("style");
+//textContent get and set the element content it's mean it's override the existing content
 
-createAtt.value="color:red";
+//createTextNode use create indepent text and add it to any element 
+const h1Element=document.getElementById('demo');
+const gettextcontenet=document.createTextNode(' is hubmle person')
+console.log(gettextcontenet)
+h1Element.appendChild(gettextcontenet);
 
-createElement.setAttributeNode(createAtt);
-
-createElement.textContent='jobayed is humble';
-
-document.body.append(createElement)
+document.body.append(h1Element);
