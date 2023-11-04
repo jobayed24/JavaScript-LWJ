@@ -1,10 +1,6 @@
+const createElement=document.createElement('h1');
 
-let getLink=document.getElementsByTagName('a')[0];
+createElement.setAttribute('id','jk');
+createElement.textContent='Jobayed exploring the JavaScript'
 
-let createHref=document.createAttribute('href');
-
-createHref.value='https://jobayed.net';
-
-getLink.setAttributeNode(createHref);
-
-console.log(getLink)
+document.body.append(createElement);
