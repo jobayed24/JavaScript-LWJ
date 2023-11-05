@@ -1,2 +1,2 @@
-let getColorForm=document.forms.namedItem('myColorForm');
-console.log(getColorForm)
+const getElement=document.getElementsByClassName('example color')[0].setAttribute('style','background-color:red; color:white; padding:30px; border-radius: 10px; font-size: 40px');
+console.log(getElement);
