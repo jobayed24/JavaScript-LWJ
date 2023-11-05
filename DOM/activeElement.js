@@ -1,3 +1,13 @@
-let getItem=document.getElementsByName('fname')[0];
+setInterval("getFocused()",1);
 
-console.log(getItem);
+function getFocused(){
+    let text;
+    if(document.hasFocus()){
+        text='you focused on document';
+    }else{
+        text='you didn\'t focused on doucment';
+    }
+    document.getElementById("demo").innerHTML=text
+}
+
+
