@@ -6,7 +6,7 @@ for( let i=0; i<getImg.length; i++){
 const getHttps=getLinks.filter(checkFilter);
 
 function checkFilter(value){
-   return value.startsWith('https');
+   return value.includes('.com/jk');
 }
 console.dir(getHttps)
 
