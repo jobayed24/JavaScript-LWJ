@@ -1,2 +1,2 @@
-let getHead=document.firstElementChild.tagName;
+let getHead=document.head.tagName;
 console.log(getHead);
