@@ -1,9 +1,11 @@
-let getButton=document.getElementById('moveItem');
-getButton.addEventListener('click',moveItem);
-function moveItem(){
-    let getMyList=document.getElementById('myList');
-    let getMyList2=document.getElementById('myList2');
-    let getItem=getMyList.lastElementChild;
-    getMyList2.appendChild(getItem);
-    
+function myButton(){
+    let getInputFeild=document.getElementById('textRang');
+    let getInputValue=getInputFeild.value;
+    let text;
+    if(isNaN(getInputValue) || getInputValue <1 || getInputValue > 10){
+        text='Value is Invalid';
+    }else{
+        text='value ok';
+    }
+    document.getElementById('demo').innerHTML=text;
 }
